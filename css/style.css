@@ -364,7 +364,9 @@ p {
 
 /* 06 Footer css End  
 ======================================*/
-
+.hide{
+    display: none;
+}
 /* Responsive Media Quary */
 
 @media screen and (max-width:576px){
@@ -477,8 +479,65 @@ p {
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
+    .header-container {
+        margin: 0 50px;
+    }
+    .navbar {
+        padding-top: 40px;
+    }
+    .banner-container{
+        gap: 20px;
+    }
+    .banner-content, .banner-image{
+        width: 45%;
+        padding-right: 0;
+    }
+    .banner-image .image-box {
+        padding: 37px 30px;
+        background-size: contain;
+    }
+    .banner-content h1{
+        font-size: 38px;
+    }
+    .banner-container p {
+        margin: 36px 0;
+    }
+    .sponsor-box {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px 46px;
+    }
+    .collection-container{
+        padding-top: 70px;
+    }
+    .collection-wrap{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 20px;
+    }
+    .sponsor-item img, .item-image img, .image-box img {
+        width: 100%;
+    }
+    .collection-container .seemore {
+        margin-top: 30px;
+    }
+    .collection-container .seemore a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50px);
+    }
+    section.featured-container {
+        margin: 0 20px;
+        gap: 20px;
+    }
+    .featured-contant .content-header {
+        font-size: 1.5rem;
+    }
+    .footer-content {
+        width: 100%;
+    }
+    .footer-container {
+        margin-top: 60px;
+    }
 
-
-    
 }
 
