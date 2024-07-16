@@ -176,6 +176,15 @@ p {
     font-weight: 600;
 
 }
+.hamburger{
+    display: none;
+}
+.nav-items .cart{
+    display: none;
+}
+.nav-items .hamburger i{
+    font-size: 2rem;
+}
 
 /* banner */
 .banner-container{
@@ -351,6 +360,125 @@ p {
     font-size: 2rem;
 
 }
+
+
 /* 06 Footer css End  
 ======================================*/
+
+/* Responsive Media Quary */
+
+@media screen and (max-width:576px){
+    .header-container{
+        max-width: 576px;
+    }
+    .nav-items ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav-items .cart{
+        display: block;
+    }
+    .navbar{
+        margin: 0 20px;
+        padding-top: 30px;
+    }
+    .navbar .logo a{
+        font-size: 1.1rem;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        margin: 0 20px;
+        padding: 60px 0;
+    }
+    
+    .banner-content {
+        padding-right: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 28px;
+    }
+    
+    .image-box, .image-box img{
+        width: 100%;
+    }
+
+    /* Sponsor  */
+    .sponsor-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 13px;
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 15px 20px;
+    }
+    /* Collection  */
+    .collection-container{
+        padding: 20px;
+        margin-bottom: 70px;
+    }
+    .collection-wrap{
+        grid-template-columns: 1fr;
+       
+    }
+    .sponsor-item img, .item-image img, .featured-image img{
+        width: 100%;
+    }
+    .collection-wrap{
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    /* Featured  */
+    .featured-container{
+        flex-direction: column-reverse;
+        margin: 0 20px ;
+        gap: 40px;
+    }
+    
+    .featured-contant {
+        text-align: center;
+    }
+    .featured-contant p{
+        margin-bottom: 30px;
+    }
+    .featured-contant .content-header {
+        font-size: 24px;
+    }
+
+    /* Footer  */
+    .footer-container {
+        margin-top: 50px;
+    }
+    .footer-content{
+        width: auto;
+    }
+    .footer-header{
+        font-size: 1rem;
+    }
+    .Copyright, .rights{
+        font-size: 12px;
+    }
+    .socia-icons{
+        gap: 7px;
+    }
+    .socia-icons a {
+        width: 40px;
+        height: 40px;
+    }
+    .socia-icons a>i {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+
+
+    
+}
 
